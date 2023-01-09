@@ -10,6 +10,8 @@ set backspace=indent,eol,start
 set cursorline
 set cursorcolumn
 set number
+nnoremap <leader>h :set hlsearch! hlsearch?<CR> 
+nnoremap <leader>n :set nu! nu? <CR>
 
 
 call plug#begin()
@@ -40,12 +42,10 @@ Plug 'ray-x/lsp_signature.nvim'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'rafamadriz/friendly-snippets'
+Plug 'neovim/nvim-lspconfig'
 
 " Plug 'williamboman/nvim-lsp-installer'
 " Plug 'hrsh7th/cmp-copilot'
-
-Plug 'neovim/nvim-lspconfig'
-
 call plug#end()
 
 " slime 
@@ -62,11 +62,3 @@ lua require('plug_config.gruvbox')
 lua require('plug_config.nvim-cmp')
 lua require('plug_config.lsp_config')
 " lua require('plug_config.lsp_installer')
-
-" key shortcuts
-nnoremap <leader>h :set hlsearch! hlsearch?<CR> 
-nnoremap <leader>n :set nu! nu? <CR>
-
-
-
-
