@@ -33,8 +33,8 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 
-Plug 'williamboman/nvim-lsp-installer'
-Plug 'hrsh7th/cmp-copilot'
+" Plug 'williamboman/nvim-lsp-installer'
+" Plug 'hrsh7th/cmp-copilot'
 
 Plug 'neovim/nvim-lspconfig'
 
@@ -53,7 +53,7 @@ lua require('plug_config.gruvbox')
 " lua require('plug_config.coc')
 lua require('plug_config.nvim-cmp')
 lua require('plug_config.lsp_config')
-lua require('plug_config.lsp_installer')
+" lua require('plug_config.lsp_installer')
 
 " key shortcuts
 nnoremap <leader>h :set hlsearch! hlsearch?<CR> 
