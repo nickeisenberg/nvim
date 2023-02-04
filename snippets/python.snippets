@@ -1,7 +1,4 @@
-snippet test_snip
-	with ${1:expr} as ${2:var}:
-		${0:${VISUAL}}
-
+#-----slotly snippets-----
 snippet ptly_fig
 	fig = go.Figure()
 	_ = fig.add_trace(
@@ -54,3 +51,23 @@ snippet ptly_subplot
 	            'text':'',
 	            })
 	fig.show()
+#--------------------------------------------------
+
+#-----math/probability snippets-----
+snippet bmotion
+	time = np.linspace(0, 1, 1000)
+	bm_paths = np.sqrt(time[1] - time[0]) * np.random.normal(size=(50, 999))
+	bm_paths = np.hstack((np.zeros((50, 1)), bm_paths))
+	bm_paths = np.cumsum(bm_paths, axis=1)
+#--------------------------------------------------
+
+#-----pandas snippets-----
+snippet pd_dframe
+	df = pd.DataFrame(
+        data=${1:data},
+        index=${2:index},
+        columns=${3:columns})
+
+
+
+
