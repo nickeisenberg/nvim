@@ -24,4 +24,5 @@ require("lspconfig").sumneko_lua.setup {
 
 -- Python
 require'lspconfig'.pyright.setup{}
-
+-- R
+require'lspconfig'.r_language_server.setup{}

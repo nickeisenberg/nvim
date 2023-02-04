@@ -2,6 +2,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set textwidth=79
+set colorcolumn=79
 set expandtab
 set autoindent
 set fileformat=unix
@@ -24,7 +25,7 @@ Plug 'nvim-treesitter/nvim-treesitter'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jpalardy/vim-slime'
 Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}  " R IDE
-"
+
 "-----completion-----
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -35,7 +36,7 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'ray-x/lsp_signature.nvim'
-"
+
 "-----snippets-----
 " Plug 'hrsh7th/cmp-vsnip'
 " Plug 'hrsh7th/vim-vsnip'
@@ -62,3 +63,4 @@ lua require('plug_config.gruvbox')
 lua require('plug_config.nvim-cmp')
 lua require('plug_config.lsp_config')
 " lua require('plug_config.lsp_installer')
+lua require('plug_config.nvimR')
