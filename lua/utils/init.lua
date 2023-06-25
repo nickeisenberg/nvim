@@ -2,6 +2,7 @@ local M = {}
 
 M.root_patterns = { ".git", "lua" }
 
+-- A function from LazyVim
 -- returns the root directory based on:
 -- * lsp workspace folders
 -- * lsp root_dir
