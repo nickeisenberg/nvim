@@ -34,8 +34,11 @@ return {
         }, "\n"),
         query_updaters = [[abcdefghilmoqrstuvwxyz0123456789_-,.ABCDEFGHIJKLMOQRSTUVWXYZ]],
         items = {
-          { action = "tab G", name = "G: Fugitive", section = "Git" },
-          { action = "PackerSync", name = "U: Update Plugins", section = "Plugins" },
+          { action = "Lazy", name = "L: Lazy", section = "Lazy" },
+          { action = "Mason", name = "M: Mason", section = "Language Servers" },
+          { action = "Telescope find_files", name = "F: Find Files", section = "Telescope" },
+          { action = "Telescope live_grep", name = "G: Find Word", section = "Telescope" },
+          { action = "Telescope oldfiles", name = "R: Recent Files", section = "Telescope" },
           { action = "enew", name = "E: New Buffer", section = "Builtin actions" },
           { action = "qall!", name = "Q: Quit Neovim", section = "Builtin actions" },
         },
