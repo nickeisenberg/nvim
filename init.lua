@@ -23,5 +23,4 @@ require("lazy").setup({
 })
 
 require('config')
-require('plugin_setup')
 
