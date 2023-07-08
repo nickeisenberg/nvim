@@ -62,6 +62,7 @@ return {
       ltex = {},
       texlab = {},
       pyright = {},
+      bashls = {},
       -- rust_analyzer = {},
       -- tsserver = {},
       lua_ls = {
