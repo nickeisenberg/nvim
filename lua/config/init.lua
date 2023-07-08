@@ -1,2 +1,2 @@
 require("config.keymaps")
-require("config.vim_o")
+require("config.editor_options")
