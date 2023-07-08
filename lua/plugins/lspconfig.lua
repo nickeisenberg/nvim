@@ -63,6 +63,7 @@ return {
       texlab = {},
       pyright = {},
       bashls = {},
+      r_language_server = {},
       -- rust_analyzer = {},
       -- tsserver = {},
       lua_ls = {
