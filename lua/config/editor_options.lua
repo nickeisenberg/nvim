@@ -9,6 +9,10 @@ vim.o.smartcase = true
 -- line numbers
 vim.wo.nu = true
 
+-- line and column highlight
+vim.wo.cursorline = true
+vim.wo.cursorcolumn = true
+
 -- column length indicator
 vim.cmd(
   [[
