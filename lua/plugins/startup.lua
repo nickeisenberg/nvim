@@ -1,12 +1,3 @@
--- return {
---   "startup-nvim/startup.nvim",
---   dependencies = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
---   config = function()
---     -- require("startup").setup({theme = "dashboard"})
---     require("startup").setup(require"plugin_setup.startup")
---   end
--- }
-
 return {
   "echasnovski/mini.starter",
   version = false, -- wait till new 0.7.0 release to put it back on semver
@@ -26,38 +17,36 @@ return {
         evaluate_single = true,
         footer = os.date(),
         header = table.concat({
-          [[        ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗       ]],
-          [[        ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║       ]],
-          [[        ██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║       ]],
-          [[        ██║╚██╗██║ ██╔══╝  ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║       ]],
-          [[        ██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║       ]],
-          [[        ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝       ]],
-          [[                                                                     ]],
-          [[                                     /\                              ]],
-          [[                                /\  //\\                             ]],
-          [[                         /\    //\\///\\\        /\                  ]],
-          [[                        //\\  ///\////\\\\  /\  //\\                 ]],
-          [[           /\          /  ^ \/^ ^/^  ^  ^ \/^ \/  ^ \                ]],
-          [[          / ^\    /\  / ^   /  ^/ ^ ^ ^   ^\ ^/  ^^  \               ]],
-          [[         /^   \  / ^\/ ^ ^   ^ / ^  ^    ^  \/ ^   ^  \       *      ]],
-          [[        /  ^ ^ \/^  ^\ ^ ^ ^   ^  ^   ^   ____  ^   ^  \     /|\     ]],
-          [[       / ^ ^  ^ \ ^  _\___________________|  |_____^ ^  \   /||o\    ]],
-          [[      / ^^  ^ ^ ^\  /______________________________\ ^ ^ \ /|o|||\   ]],
-          [[     /  ^  ^^ ^ ^  /________________________________\  ^  /|||||o|\  ]],
-          [[    /^ ^  ^ ^^  ^    ||___|___||||||||||||___|__|||      /||o||||||\ ]],
-          [[   / ^   ^   ^    ^  ||___|___||||||||||||___|__|||          | |     ]],
-          [[  / ^ ^ ^  ^  ^  ^   ||||||||||||||||||||||||||||||oooooooooo| |ooooo]],
-          [[ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo]],
+          [[            (`  ).          .+(   )                                 ]],
+          [[           (     ).         (   .  )                  (`  ).        ]],
+          [[          _(       '`.     (   (   ))  .+(   )       (     ).       ]],
+          [[      .=(`(      .   ) .+(  `- __.'    (    .       _(       '`.)   ]],
+          [[     ((    (..__.:'-'  (   .  )       (   (     .=(`(      .   )))  ]],
+          [[     `(       ) )     (   (   ))       `- __.' ((    (..__.:'-'     ]],
+          [[       ` __.:'   )     `- __.'      /\         `(       ) )    .')  ]],
+          [[    ( )       --'              /\  //\\          ` __.:'   )  (_  ) ]],
+          [[   (_.'          .')    /\    //\\///\\\        /\    .')   .')     ]],
+          [[                (_  )  //\\  ///\////\\\\  /\  //\\        (_  )    ]],
+          [[          /\          /  ^ \/^ ^/^  ^  ^ \/^ \/  ^ \                ]],
+          [[         / ^\    /\  / ^   /  ^/ ^ ^ ^   ^\ ^/  ^^  \               ]],
+          [[        /^   \  / ^\/ ^ ^   ^ / ^  ^    ^  \/ ^   ^  \       *      ]],
+          [[       /  ^ ^ \/^  ^\ ^ ^ ^   ^  ^   ^   ____  ^   ^  \     /|\     ]],
+          [[      / ^ ^  ^ \ ^  _\___________________|  |_____^ ^  \   /||o\    ]],
+          [[     / ^^  ^ ^ ^\  /______________________________\ ^ ^ \ /|o|||\   ]],
+          [[    /  ^  ^^ ^ ^  /________________________________\  ^  /|||||o|\  ]],
+          [[   /^ ^  ^ ^^  ^    ||___|___||||||||||||___|__|||      /||o||||||\ ]],
+          [[  / ^   ^   ^    ^  ||___|___||||||||||||___|__|||          | |     ]],
+          [[ / ^ ^ ^  ^  ^  ^   ||||||||||||||||||||||||||||||oooooooooo| |ooooo]],
+          [[oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo]],
         }, "\n"),
         query_updaters = [[abcdefghilmoqrstuvwxyz0123456789_-,.ABCDEFGHIJKLMOQRSTUVWXYZ]],
         items = {
-          { action = "Lazy", name = "L: Lazy", section = "Lazy" },
-          { action = "Mason", name = "M: Mason", section = "Language Servers" },
-          { action = "Telescope find_files", name = "F: Find Files", section = "Telescope" },
-          { action = "Telescope live_grep", name = "G: Find Word", section = "Telescope" },
-          { action = "Telescope oldfiles", name = "R: Recent Files", section = "Telescope" },
-          { action = "enew", name = "E: New Buffer", section = "Builtin actions" },
-          { action = "qall!", name = "Q: Quit Neovim", section = "Builtin actions" },
+          { action = "Lazy", name = "l: Lazy", section = "Lazy" },
+          { action = "Mason", name = "m: Mason", section = "Language Servers" },
+          { action = "MasonLog", name = "ml: MasonLog", section = "Language Servers" },
+          { action = "Telescope find_files", name = "f: Find Files", section = "Telescope" },
+          { action = "Telescope live_grep", name = "g: Find Word", section = "Telescope" },
+          { action = "Telescope oldfiles", name = "r: Recent Files", section = "Telescope" },
         },
       }),
       vim.cmd([[
@@ -72,3 +61,37 @@ return {
     }
   end
 }
+
+
+
+-- header = table.concat({
+--   [[        ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗       ]],
+--   [[        ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║       ]],
+--   [[        ██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║       ]],
+--   [[        ██║╚██╗██║ ██╔══╝  ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║       ]],
+--   [[        ██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║       ]],
+--   [[        ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝       ]],
+--   [[                                                                     ]],
+--   [[                                     /\                              ]],
+--   [[                                /\  //\\                             ]],
+--   [[                         /\    //\\///\\\        /\                  ]],
+--   [[                        //\\  ///\////\\\\  /\  //\\                 ]],
+--   [[           /\          /  ^ \/^ ^/^  ^  ^ \/^ \/  ^ \                ]],
+--   [[          / ^\    /\  / ^   /  ^/ ^ ^ ^   ^\ ^/  ^^  \               ]],
+--   [[         /^   \  / ^\/ ^ ^   ^ / ^  ^    ^  \/ ^   ^  \       *      ]],
+--   [[        /  ^ ^ \/^  ^\ ^ ^ ^   ^  ^   ^   ____  ^   ^  \     /|\     ]],
+--   [[       / ^ ^  ^ \ ^  _\___________________|  |_____^ ^  \   /||o\    ]],
+--   [[      / ^^  ^ ^ ^\  /______________________________\ ^ ^ \ /|o|||\   ]],
+--   [[     /  ^  ^^ ^ ^  /________________________________\  ^  /|||||o|\  ]],
+--   [[    /^ ^  ^ ^^  ^    ||___|___||||||||||||___|__|||      /||o||||||\ ]],
+--   [[   / ^   ^   ^    ^  ||___|___||||||||||||___|__|||          | |     ]],
+--   [[  / ^ ^ ^  ^  ^  ^   ||||||||||||||||||||||||||||||oooooooooo| |ooooo]],
+--   [[ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo]],
+-- }, "\n"),
+--
+--
+--   .--  `.  (    ) )      
+--        ((    (..__.:'-'   .+(   )   ` _`  ) )                 
+-- `.     `(       ) )       (   .  )     (   )  ._   
+--   )      ` __.:'   )     (   (   ))     `-'.-(`  ) 
+-- )  )  ( )       --'       `- __.'  
