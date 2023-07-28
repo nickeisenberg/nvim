@@ -1,4 +1,5 @@
 return {
   "luk400/vim-jukit",
-  ft = {'python'}
+  ft = {'python'},
+  enabled = false
 }

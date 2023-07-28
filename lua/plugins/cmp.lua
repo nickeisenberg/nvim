@@ -10,12 +10,12 @@ return {
     'hrsh7th/cmp-nvim-lsp',
 
     -- Adds a number of user-friendly snippets
-    -- 'rafamadriz/friendly-snippets',
+    'rafamadriz/friendly-snippets',
   },
   config = function()
     local cmp = require 'cmp'
     local luasnip = require 'luasnip'
-    -- require('luasnip.loaders.from_vscode').lazy_load()
+    require('luasnip.loaders.from_vscode').lazy_load()
     return {
       luasnip.config.setup {},
       cmp.setup {
