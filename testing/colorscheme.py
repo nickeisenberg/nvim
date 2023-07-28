@@ -1,8 +1,6 @@
 '''
 Text to see how the color scheme looks
 '''
-
-
 import numpy as np
 
 np.linspace(
@@ -10,10 +8,8 @@ np.linspace(
 )
 
 class foo:
-
     def __init__(self):
         self.x = 2
-    
     # text text
     @property
     def bar(self):
@@ -25,5 +21,3 @@ class foo:
         except:
             _ = False
         return None
-
-
