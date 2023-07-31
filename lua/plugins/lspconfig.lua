@@ -63,6 +63,7 @@ return {
       pyright = {},
       bashls = {},
       html = {},
+      cssls = {},
       r_language_server = {},
       lua_ls = {
         Lua = {
