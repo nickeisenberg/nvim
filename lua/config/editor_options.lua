@@ -9,10 +9,3 @@ vim.o.smartcase = true
 -- line numbers
 vim.wo.nu = true
 
--- column length indicator
-vim.cmd(
-  [[
-  set colorcolumn=80
-  hi ColorColumn ctermbg=lightred guibg=red
-  ]]
-)

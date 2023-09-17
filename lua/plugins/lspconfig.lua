@@ -64,7 +64,7 @@ return {
       bashls = {},
       html = {},
       cssls = {},
-      r_language_server = {},
+      -- r_language_server = {},
       lua_ls = {
         Lua = {
           workspace = { checkThirdParty = false },
